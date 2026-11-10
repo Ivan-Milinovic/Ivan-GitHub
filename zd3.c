@@ -202,7 +202,6 @@ int addBeforeNode(struct Node* header, int targetIndex, struct Osoba osoba, stru
 
 
 int writeListToFile(struct Node* header, FILE* file) {
-	FILE* file = NULL;
 	fopen_s(&file, "list.txt", "w");
 	if (file == NULL) {
         printf("Pogreska: datoteka nije otvorena!\n");
@@ -235,7 +234,6 @@ int writeListToFile(struct Node* header, FILE* file) {
 }
 
 struct Node* readListFromFile(FILE* file) {
-	FILE* file = NULL;
 	fopen_s(&file, "list.txt", "r");
 	if (file == NULL) {
         printf("Greska: datoteka nije otvorena!\n");
